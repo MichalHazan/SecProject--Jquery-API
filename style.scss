@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    background-image: url('pics/virtualCoins.png');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  
+  background-size: cover; 
+}
+
+.parallax{
+    /* The image used */
+  background-image: url('pics/VC2.jpg');
+  // filter: blur(3px);
+  // -webkit-filter: blur(3px);
+  /* Full height */
+  height: 100vh; 
+  box-shadow: 3px 8px 8px;
+      
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  border-bottom: 3px rgba(0, 0, 0, 0.452) solid;
+}
+.container{
+    z-index: 2;
+}
+.head{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(34, 33, 33, 0.712); /* Black w/opacity/see-through */
+  color: white;
+  
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+  h1 {
+     color: #fd5930;
+      font-family: 'Lobster', cursive; 
+      font-size: 72px; 
+      font-weight: normal; 
+      line-height: 48px;
+      margin: 0 0 18px; 
+      text-shadow: 1px 0 0 rgb(255, 255, 255); 
+      padding: 10px;
+    }
+  
+  p{
+    font-weight: 400;
+    margin: 10px;
+  }
+}
+.navbar{
+    position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -10%);
+}
+#bodyDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    
+   
+}
+.switch {
+  position: absolute;
+  right: 10%;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .navbar{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -10%);
+  }
+}
+.about{
+  
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 40vh;
+  background-color: rgba(250, 249, 249, 0.973);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  p{
+    width: 50%;
+    margin: 10px;
+    font-size: larger;
+  }
+  img{
+    width: calc(50% - 20px);
+    float: right;
+    height: 50vh;
+  }
+  
+}
+#myProgress {
+  width: 500px;
+  background-color: #ddd;
+}
+
+#ProgressBar {
+  width: 10%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+.card{
+    width: 18rem;
+    height: auto;
+    margin: 10px;
+  }
+.MoreInfoDiv{
+    display: none;
+    padding: 10px;
+    margin: 5px;
+    img{
+      position: absolute;
+      right: 10%;
+  
+    }
+}
+/* חלון קופץ בבחירת מעל 5 מטבעות */
+.toggledCoins {
+  list-style: none;
+  margin: 5px;
+}
+
+.toggledCoins li {
+  display: flex;
+  margin: 5px;
+  
+}
+
+.coinsToggle {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: left;
+  margin: 5px;
+}
+
+.button-toggle {
+  flex-grow: 1;
+  text-align: right;
+  margin: 5px;
+}
+
+#chartContainer{
+  height: 380px; width: 100%;
+  
+}
+
+
